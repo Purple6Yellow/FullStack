@@ -1,0 +1,183 @@
+
+/*  Mobile First  */
+#boven{
+    background-color: rgba(255, 68, 0, 0.882);
+    color: white;
+    text-align: center;
+}
+
+footer{
+    background-color:  rgba(255, 68, 0, 0.882);
+    text-align: center;
+    color: white;
+}
+
+.menu{  
+    background-color:#d43a02e1;
+    color: white;
+}
+
+.menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding:0;
+}
+
+.menu li{
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: inherit;
+    color: white;
+    float:center;
+}
+
+.menu a{
+    text-decoration:none;
+    color:white;
+}
+
+.menu li:hover {
+    background-color:  rgba(255, 68, 0, 0.882);
+    }
+
+
+.kleur /* linkergedeelte van de website */{
+    background-color: #f7b396;
+    text-align: left;
+    color: black;
+}
+
+
+.img1{
+    width: 30%;
+    height: auto;
+    }
+
+.img2{
+    width: 60%;
+    height: auto;
+}
+
+.img3{
+    width: 40%;
+    height:auto;
+}
+    
+.right{
+    vertical-align: middle;
+    float: right;
+    padding: 15px;
+}
+
+.left{
+    vertical-align: middle;
+    float: left;
+    padding: 15px;
+}
+
+/* letters */
+.kleurL/* Letterkleur titels */{
+    color:hwb(16 38% 1% / 0.882);
+}
+
+.LT1{
+    font-weight: 100;
+}
+
+/* .... */
+
+#button{
+    background-color:#d43a02e1;
+    border-bottom: black;
+    position: relative;
+        left:5%;
+}
+.RDeel{
+    padding:20px;
+    margin-left: 0px;
+}
+
+.LDeel{
+    padding:20px;
+    margin-left: 0px;
+}
+
+iframe{ /* contact -googlemap link */
+    width:100%;
+    height:auto;
+}
+
+
+/* Fluid grid - 12 kolommen 
+tbv telefoon scherm          */
+
+[class*="col-"]{
+float: left;
+padding: 0px;
+min-height: 30%;
+        }
+            .col-1 {width: 8.33%;}
+            .col-2 {width: 16.66%;}
+            .col-3 {width: 25%;}
+            .col-4 {width: 100%;}
+            .col-5 {width: 41.66%;}
+            .col-6 {width: 50%;}
+            .col-7 {width: 100%;}
+            .col-8 {width: 66.66%;}
+            .col-9 {width: 75%;}
+            .col-10 {width: 83.33%;}
+            .col-11 {width: 91.66%;}
+            .col-12 {width: 100%;}
+            
+[class*="row-"]{
+padding: 0%;            
+}
+            .row-1 {height: 8.33%;}
+            .row-2 {height: 16.66%;}
+            .row-3 {height: 25%;}
+            .row-4 {height:100%;}
+            .row-5 {height:41.66%;}
+            .row-6 {height:50%;}
+            .row-7 {height:100%;}
+            .row-8 {height: 66.66%;}
+            .row-9 {height: 75%;}
+            .row-10 {height: 83.33%;}
+            .row-11 {height: 91.66%;}
+            .row-12 {height: 100%;}            
+                
+
+
+/* Mediaquery: CSS waarde wanneer scherm groter is dan smartphone / 768px  */
+@media only screen and (min-width: 768px){
+    #boven{
+        background-color: rgba(255, 68, 0, 0.882);
+        color: white;
+        text-align: center;
+        }
+    .menu li{
+        padding: 8px;
+        margin-bottom: 7px;
+        background-color: inherit;
+        float:left;
+    }
+
+    /* Fluid grid - 12 kolommen 
+        tbv groot scherm          */
+
+    [class*="col-"]{
+    float: left;
+    padding: 0px;
+            }
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}    
+}

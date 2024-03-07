@@ -1,0 +1,19 @@
+{% extends 'blog/baseblog.html' %}
+
+{% block inhoud %}
+
+<h1> Overzicht agenda Muziekschool</h1>
+
+
+{% for post in posts %}
+        <article class="post">
+            <time class="date">
+            {{ post.date }}
+            </time> 
+            
+            <h2> <a href="{% url 'post_inhoud' pk=post.pk %}"> {{ post.title }}"> {{ post.title }}</a> </h2>
+            <p> {{ post.text|linebreaksbr }} </p>
+        </article>
+ {% endfor %}
+ {% endblock %}
+

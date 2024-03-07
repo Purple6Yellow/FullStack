@@ -1,0 +1,50 @@
+<!--het 1e html bestand voor djangoblog-->
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="nl" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Agenda Muziekschool</title>
+        <link rel="stylesheet" href="{% static 'css/basisweb.css' %}" > 
+    </head>
+
+    <body>
+      <!-- 1e  deel -->
+      <header>
+        <div class="col-12" id="boven">  
+            <h1>Muziekschool H&J</h1>
+
+            {% block subtitle %}
+            <h5> Luisterend oor voor talent!</h5>
+            {% endblock subtitle %}
+         </div>
+         <div class="row">
+            <!-- <div class="col-4"></div>-->
+            <div class="col-12 menu">  
+                <ul>
+                    <li> <a href="/site/index.html"> Home     </a></li>
+                    <li> <a href="/site/overons.html"> Over ons </a></li>
+                    <li> <a href="/site/tarieven.html"> Tarieven </a></li>
+                    <li> <a href="/site/contact.html"> Contact  </a></li>
+                    <li> <a href="/blog/post_list.html"> Agenda </li>
+                    <li> <a href="/BlogJava.html"> Blog </li>
+
+                </ul>
+            </div>
+            <!-- <div class="col-4"></div>-->
+         </div> <!-- Einde row -->
+    </header>
+
+
+        <section>
+            {% block inhoud %}
+            {% endblock %}
+
+        </section>
+
+        <footer>
+
+        </footer>
+    </body>
+</html>

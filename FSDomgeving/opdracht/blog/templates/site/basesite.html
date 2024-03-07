@@ -1,0 +1,78 @@
+<!-- MObile versie -->
+<!DOCTYPE html>
+
+<html lang="nl">
+    <head>
+        <title> Full Stack Developper: Eindopdracht</title>
+        <meta charset = "utf-8">
+
+        <!-- Style CSS     -->
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'css/basisweb.css' %}">
+    
+        <!-- MediaQuery . viewport  (browser weet nu op welke breedte het moet worden afgebeeld)-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+
+        <!-- 1e  deel -->
+        <header>
+            <div class="col-12" id="boven">  
+                <h1>Muziekschool H&J</h1>
+
+                {% block subtitle %}
+                <h5> Luisterend oor voor talent!</h5>
+                {% endblock subtitle %}
+             </div>
+             <div class="row">
+                <!-- <div class="col-4"></div>-->
+                <div class="col-12 menu">  
+                    <ul>
+                        <li> <a href="/site/index.html"> Home     </a></li>
+                        <li> <a href="/site/overons.html"> Over ons </a></li>
+                        <li> <a href="/site/tarieven.html"> Tarieven </a></li>
+                        <li> <a href="/site/contact.html"> Contact  </a></li>
+                        <li> <a href="/blog/post_list.html"> Agenda </li>
+                        <li> <a href="/BlogJava.html"> Blog </li>
+
+                    </ul>
+                </div>
+                <!-- <div class="col-4"></div>-->
+             </div> <!-- Einde row -->
+        </header>
+
+
+        <section>
+
+            <section class="row"> <!--START ROW-->
+                <!--Linkerdeel 20%-->
+                <div class = "col-3 kleur">   
+                    <div class = "LDeel">
+                        {% block inhoud1 %}
+                        {% endblock inhoud1 %}
+                    </div>
+                </div>
+
+                <!--Rechterdeel 79%-->
+                <div class="col-7">
+                    <div class="RDeel">
+                        {% block inhoud2 %}
+                        {% endblock inhoud2 %}
+                    </div>
+                </div>
+
+
+
+        </section>
+
+
+        <footer class="col-12">
+            <p> @ Copyright 2021 Muziekschool H & J </p>
+            <p> (Dit is een oefenopdracht, alle informatie 
+                op deze website is fictief.) </p>    
+        </footer>
+
+    </body>
+    </html>
+        
