@@ -9,14 +9,16 @@ from django.utils import timezone
 # eigenschappen:    Datum / Tijdstip (begin en eind) / Omschrijving / Kosten
 
 class Post(models.Model):
+   #  author = models.ForeignKey(settings.AUTH_USER_MODEL,on_delete=models.CASCADE)
     title = models.CharField(max_length=200)
     date = models.DateField(blank=True, null=True)
+    #date = models.DateField(default=timezone.now)
     start_time = models.TimeField(blank = True, null = True)
     end_time = models.TimeField(blank = True, null = True)
     text = models.TextField()
     prijs = models.IntegerField() 
 
-    def Welkenaam(self):
+    def publish(self):
         self.date = timezone.now()
         self.save()
 

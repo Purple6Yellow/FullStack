@@ -1,0 +1,25 @@
+ #divResult1, #divResult2, #divResult3 {
+          border: 3px solid #999;
+          background-color: #ffc;
+          margin-left: 100px;
+          margin-bottom: 50px;
+          margin-top: 10px;
+          padding: 4px;
+          width: 80%; 
+          height: 200px;
+          border-radius: 5px;
+      }
+
+.opmaak{
+    margin-left: 100px;}
+
+#pagina Blog5.html
+
+a{
+    color: black;
+    text-decoration: none;
+    
+}
+a :hover{
+    color:  rgba(255, 68, 0, 0.882);
+}

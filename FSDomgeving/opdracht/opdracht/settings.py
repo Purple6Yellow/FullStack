@@ -121,8 +121,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
-#toegevoegd maart 2024 ivm staticfiles 
-
+#toegevoegd maart 2024 ivm staticfiles     
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 # einde
 

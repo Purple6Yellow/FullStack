@@ -77,7 +77,7 @@ footer{
 
 /* letters */
 .kleurL/* Letterkleur titels */{
-    color:hwb(16 38% 1% / 0.882);
+    color: #f7b396;
 }
 
 .LT1{
@@ -107,6 +107,12 @@ iframe{ /* contact -googlemap link */
     height:auto;
 }
 
+#BtnMotivatie{ /*activeert react / node.js op pagina index */
+    position: relative;
+    right: 5%;
+    top: 5%;
+    background-color:#d43a02e1;
+}
 
 /* Fluid grid - 12 kolommen 
 tbv telefoon scherm          */
@@ -118,12 +124,12 @@ min-height: 30%;
         }
             .col-1 {width: 8.33%;}
             .col-2 {width: 16.66%;}
-            .col-3 {width: 25%;}
+            .col-3 {width: 100%;}
             .col-4 {width: 100%;}
             .col-5 {width: 41.66%;}
             .col-6 {width: 50%;}
             .col-7 {width: 100%;}
-            .col-8 {width: 66.66%;}
+            .col-8 {width: 100%;}
             .col-9 {width: 75%;}
             .col-10 {width: 83.33%;}
             .col-11 {width: 91.66%;}

@@ -1,0 +1,24 @@
+{% extends 'blog/baseblog.html' %}
+{% load static %}
+
+{% block inhoud1 %}                                  
+
+<table width="600">
+    <ul> Voornaam</ul>
+    <ul>  <input type ="text" name="voornaam" placeholder="Voornaam"> </ul>
+    <ul>Achternaam</ul>
+    <ul>     <input type ="text" name="achternaam" placeholder="Achternaam"></ul>
+    <ul>Email adres</ul>
+    <ul><input type ="email" name="uw emailadres" placeholder="Uw emailadres"></ul>
+    <ul>Land</ul>
+    <ul>     <input type ="text" name="land" placeholder="Nederland"></ul>
+    <ul>Uw bericht</ul>
+    <ul> <textarea name="bericht" maxlength="1000"placeholder="Uw bericht"></textarea></ul>
+
+    
+    <input id="button" type="submit" value="Verzend">
+
+</table>
+        
+                            
+{% endblock %}
