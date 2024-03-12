@@ -23,12 +23,12 @@
 
 {% block inhoud2 %}
 
-        <button id="BtnMotivatie"> Motivatie </button>
-     
         <h3 class="kleurL"> Welkom bij muziekschool H&J </h3>
+
         <p class="p6">  Muziekschool voor koperblazers en saxofonisten</p>  
         <img class="img3" src="{% static 'img/trompet.jpeg' %}" alt="">
-        <p> 
+        <button id="BtnMotivatie"> Motivatie </button>
+        <p>
         Zou het niet leuk zijn als je een saxofoon, trompet of een ander blaasinstrument
         zou kunnen bespelen? 
         Dat vergt niet alleen veel oefening, maar het is ook belangrijk dat je daarbij de juiste hulp
@@ -55,6 +55,15 @@
             Op deze website vind je veel informatie over wat deze muziekschool te bieden heeft, maar je kunt natuurlijk
             altijd vrijblijvend langskomen om meer informatie te krijgen. je kunt dan ook knnismaken en kijken of je een klik hebt 
             met Hannah en/of Jesse zijn jong en oud in goede handen! </p> <br> <br>
-
+            
+        <!-- Javascript-->
+            <script src="{%static 'js/jquery.js' %}"></script>
+            <script src="{%static 'js/jquery.min.js' %}"></script>
+            <script>
+                $('#BtnMotivatie').on('click', function URL(){
+                    location.href = "/React/EenPagina.html";
+    
+                });
+            </script>
 
 {% endblock %}>

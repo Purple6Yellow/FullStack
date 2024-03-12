@@ -78,6 +78,7 @@ footer{
 /* letters */
 .kleurL/* Letterkleur titels */{
     color: #f7b396;
+    position:relative;
 }
 
 .LT1{
@@ -107,10 +108,10 @@ iframe{ /* contact -googlemap link */
     height:auto;
 }
 
-#BtnMotivatie{ /*activeert react / node.js op pagina index */
-    position: relative;
-    right: 5%;
-    top: 5%;
+#BtnMotivatie, #BtnMotivatie2{ /*activeert react / node.js op pagina index */
+    position: absolute;
+    top: 20%;
+    right: 10%;
     background-color:#d43a02e1;
 }
 

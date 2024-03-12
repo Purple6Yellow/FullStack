@@ -1,24 +1,23 @@
 {% extends 'blog/baseblog.html' %}
+{% load static %}
 
 {% block subtitle %}
     <h5> Agenda </h5>
 {% endblock subtitle %}
 
 {% block inhoud1 %}
-
-<h1> Overzicht agenda Muziekschool vandaag</h1>
-<h1> Waarom staan de post wel in de admin omgeving en niet op deze site?? </h1>
-
-
-{% for post in posts %}
-        <article class="post">
-            <time class="date">
-            {{ post.date }}
-            </time> 
-            
-            <h2> <a href="{% url 'post_inhoud' pk=post.pk %}"> {{ post.title }}</a> </h2>
-            <p> {{ post.text|linebreaksbr }} </p>
-        </article>
- {% endfor %}
+    <h1> Overzicht agenda Muziekschool vandaag</h1>
+    <h1> Waarom staan de post wel in de admin omgeving en niet op deze site?? </h1>
+    
+        {% for post in posts %}
+                <article class="post">
+                    <time class="date">
+                    {{ post.date }}
+                    </time> 
+                    
+                    <h2> <a href="{% url 'post_inhoud' pk=post.pk %}"> {{ post.title }}</a> </h2>
+                    <p> {{ post.text|linebreaksbr }} </p>
+                </article>
+        {% endfor %}
  {% endblock %}
 

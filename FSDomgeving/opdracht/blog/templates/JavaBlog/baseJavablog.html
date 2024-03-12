@@ -12,6 +12,13 @@
     
         <!-- MediaQuery . viewport  (browser weet nu op welke breedte het moet worden afgebeeld)-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Verwijzing naar static Javascript bestanden-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="{% static 'js/jquery-ui.js' %}"></script>
+        <script src="{% static 'js/ajaxfunctie.js' %}"></script>
+        <script src="{% static 'js/animatie.js' %}"></script>
+        <script src="{%static 'js/jquery.js' %}"></script>
     </head>
 
     <body>
@@ -22,7 +29,7 @@
                 <h1>Muziekschool H&J</h1>
 
                 {% block subtitle %}
-                <h5> Agenda</h5>
+                <h5> Blog </h5>
                 {% endblock subtitle %}
              </div>
              <div class="row">
@@ -67,4 +74,3 @@
 
     </body>
     </html>
-        
