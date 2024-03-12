@@ -110,7 +110,7 @@ iframe{ /* contact -googlemap link */
 
 #BtnMotivatie, #BtnMotivatie2{ /*activeert react / node.js op pagina index */
     position: absolute;
-    top: 20%;
+    top: 30%;
     right: 10%;
     background-color:#d43a02e1;
 }

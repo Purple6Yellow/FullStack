@@ -7,6 +7,7 @@
         <!-- Style CSS     -->
         {% load static %}
         <link rel="stylesheet" type="text/css" href="{% static 'css/basisweb.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/javascr.css' %}">
         <link href="{% static 'css/jquery-ui.css' %}" rel="stylesheet"/>
 
     
@@ -14,11 +15,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- Verwijzing naar static Javascript bestanden-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-        <script src="{% static 'js/jquery-ui.js' %}"></script>
-        <script src="{% static 'js/ajaxfunctie.js' %}"></script>
-        <script src="{% static 'js/animatie.js' %}"></script>
         <script src="{%static 'js/jquery.js' %}"></script>
+        <script src="{% static 'js/jquery-ui.js' %}"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+        <script src="{% static 'js/ajaxfunctie.js' %}"></script> <!-- Uploaden van blog artikelen-->
+        <script src="{% static 'js/animatie.js' %}"></script>    <!-- Animatie op Blog pagina -->
     </head>
 
     <body>
@@ -70,7 +73,12 @@
                 op deze website is fictief.) </p>    
         </footer>
 
-
-
+        <script>            
+            // Blog toevoegen
+                $("#BtnBlogToevgn").on('click', function URL(){          
+                    location.href="/JavaBlog/BlogInvullen.html";
+                });
+        </script>
+        
     </body>
     </html>

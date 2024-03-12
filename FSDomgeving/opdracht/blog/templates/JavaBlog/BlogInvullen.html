@@ -1,19 +1,19 @@
-{% extends 'blog/baseblog.html' %}
+{% extends 'JavaBlog/baseJavablog.html' %}
 {% load static %}
 
-{% block inhoud1 %}                                  
+{% block subtitle %}
+    <h5> Blog - Invulformulier</h5>
+{% endblock subtitle %}
 
-<table width="600">
-    <ul> Voornaam</ul>
-    <ul>  <input type ="text" name="voornaam" placeholder="Voornaam"> </ul>
-    <ul>Achternaam</ul>
-    <ul>     <input type ="text" name="achternaam" placeholder="Achternaam"></ul>
-    <ul>Email adres</ul>
-    <ul><input type ="email" name="uw emailadres" placeholder="Uw emailadres"></ul>
-    <ul>Land</ul>
-    <ul>     <input type ="text" name="land" placeholder="Nederland"></ul>
-    <ul>Uw bericht</ul>
-    <ul> <textarea name="bericht" maxlength="1000"placeholder="Uw bericht"></textarea></ul>
+{% block inhoud1 %}     
+
+<table>
+    <ul> Titel</ul>
+    <ul>  <input type ="text" name="Titel" placeholder="Titel van blog-artikel"> </ul>
+    <ul> Subtitel</ul>
+    <ul>  <input type ="text" name="Subtitel" placeholder="Subtitel"></ul>
+    <ul>Blog info</ul>
+    <ul> <textarea name="bericht" placeholder="Uw blog informatie"  ></textarea></ul>
 
     
     <input id="button" type="submit" value="Verzend">

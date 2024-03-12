@@ -1,3 +1,17 @@
-<h2>Een detailpagina met 1 blog-artikel </h2>
+{% extends 'JavaBlog/baseJavablog.html' %}
+{% load static %}
 
-GEEN IDEE
+{% block subtitle %}
+<h5> Blog detail </h5>
+{% endblock subtitle %}
+
+
+
+{% block inhoud1 %}  
+
+        <div id="divResult1"> </div>
+
+        <script src="{%static 'js/jquery.js' %}"></script>
+        <script src="{% static 'js/jquery-ui.js' %}"></script>
+
+{% endblock %}

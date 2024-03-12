@@ -2,7 +2,6 @@
 {% load static %}
 
 {% block inhoud1 %}
-
     <section class="row"> <!--START ROW-->
         <!--Linkerdeel 20%-->
         <div class = "col-12">   
@@ -12,7 +11,6 @@
                     <p> Kies een datum: </p>
                     <input type="text" id="datepicker"/> 
                 </div>
-                
             
                 <h2 class = "opmaak"> Blog Overzichtpagina 3 blog artikelen </h2>
                     <!-- Pagina wordt niet meer via een knop opgehaald : <button id="btnLoad" class="opmaak">Haal pagina op</button>
@@ -20,17 +18,11 @@
                     <button id="BtnAnimatie" class="opmaak"> Animatie</button> <!-- geactiveerd via animatie.js bestand-->
                     <button id="BtnBlogToevgn" class="opmaak"> Blog toevoegen</button>
                    
-                    
                     <div id="divResult1">Hier komt de 1e blog</div>
                     <div id="divResult2">Hier komt de 2e blog</div>
                     <div id="divResult3">Hier komt de 3e blog</div>
-            
-           
-                                    
             </div>
         </div>
-
-        <script src="{% static 'js/datepicker-nl.js' %}"></script>
-
-
+   
+    </section>        
 {% endblock inhoud1 %}
